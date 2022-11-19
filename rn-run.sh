@@ -3,10 +3,6 @@
 # if rn-run ios:
 # cd ios && pod install
 # cd ..
-
-# may need 'path/to/Tee-On-Mobile' variable
-# watchman watch-del '/Users/nigelmansell/Work/Tee-On-Mobile' ; watchman watch-project '/Users/nigelmansell/Work/Tee-On-Mobile'
-
 # yarn start
 
 # if rn-run ios && simulator open:
@@ -19,14 +15,16 @@
 # if rn-run android:
 # yarn react-native run-android
 
-runIOS() 
+runIOS()
 {
+    WATCH_DIR=$(pwd)
+    echo $WATCH_DIR
+
     rm -rf node_modules
     yarn install
     cd ios && pod install && cd ..
-    watchman watch-del '/Users/nigelmansell/Work/Tee-On-POS' ; watchman watch-project '/Users/nigelmansell/Work/Tee-On-POS'
+    watchman watch-del $WATCH_DIR ; watchman watch-project $WATCH_DIR
     yarn start
-
 }
 
 runAndroid()
