@@ -27,7 +27,7 @@ On MacOS you will need to set **Ask before closing** to **Never** in Terminal se
 
 ## Installation
 ```
-git clone ~/Downloads/https://github.com/nigelrudolf/rn-run.git
+git clone https://github.com/nigelrudolf/rn-run.git ~/Downloads
 
 sudo cp ~/Downloads/rn-run/rn-run /usr/local/bin
 
