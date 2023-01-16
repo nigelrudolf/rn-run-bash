@@ -1,15 +1,10 @@
 ## Description: Run react native app on ios or android
-## Usage: rn-run -i
-## Usage: rn-run -I
-## Usage: rn-run -a
+## Usage: rn-run <option>
 ## Options:
 ##   -i: run ios
 ##   -I: run ios clean install
 ##   -a: run android
 
-## Author: @nigelrudolf
-## Version: 1.0.0
-## License: MIT
 ## Note: This script is meant to be used with react native projects
 ## Setup: On MacOS you will need to set Ask before closing to never
 
