@@ -1,1 +1,1 @@
-# rn-run-script
+# rn-run
